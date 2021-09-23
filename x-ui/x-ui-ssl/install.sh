@@ -120,8 +120,8 @@ case "$START_INPUT" in
 
 accout_conf (){
 WORK_PATH=$(dirname $(readlink -f $0))
-wget https://raw.githubusercontent.com/stilleshan/dockerfiles/main/x-ui/x-ui-ssl/x-ui-ssl.tar
-tar -xvf x-ui-ssl.tar
+#wget https://raw.githubusercontent.com/stilleshan/dockerfiles/main/x-ui/x-ui-ssl/x-ui-ssl.tar
+#tar -xvf x-ui-ssl.tar
 cat >${WORK_PATH}/x-ui-ssl/conf/account.conf<<EOF
 export ${API_ID_HEADER}="${API_ID_INPUT}"
 export ${API_KEY_HEADER}="${API_KEY_INPUT}"
